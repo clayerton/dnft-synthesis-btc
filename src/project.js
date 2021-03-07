@@ -1021,9 +1021,9 @@ window.__require = function e(t, n, o) {
           }).union().repeatForever().start()
         }, t.prototype.update = function (e) {
         }, t.prototype.adsButtonFunc2 = function () {
-          window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png"
+          // window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png"
         }, t.prototype.bannerButtonFunc = function () {
-          window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png"
+          // window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png"
         }, t.prototype.ShowFailedUi = function (e, t) {
           var n = this;
           this.scheduleOnce(function () {
@@ -1980,7 +1980,7 @@ window.__require = function e(t, n, o) {
         }, t.prototype.update = function (e) {
           this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
         }, t.prototype.adsButtonFunc = function () {
-          window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png";
+          // window.location.href = "https://636f-codenav-8grj8px727565176-1256524210.tcb.qcloud.la/yupi_wechat.png";
         }, t.prototype.TestPasslevel = function () {
           var e = this;
           this.lerpCtrl = !0, this.nowYQ >= this.passlevelYQ && (this.levelPanel.children[2].runAction(cc.sequence(cc.delayTime(1.3), cc.callFunc(function () {
@@ -3479,7 +3479,9 @@ window.__require = function e(t, n, o) {
                 }).call(function () {
                   i.default.Instance.createFruitSui(o.fruitNumber, n.node.position), i.default.Instance.createFruitL(o.fruitNumber, n.node.position, n.node.width), i.default.Instance.createLevelUpFruit(o.fruitNumber + 1, n.node.position), n.node.active = !1, t.node.active = !1, n.node.destroy(), t.node.destroy()
                 }).start())) :
+
               c == r && 9 == c && 9 == r && // 边界逻辑
+              
               (this.pengzhuangCount += 1,
               0 == t.node.getComponent("fruitData").getNumber() && (a.default.score += this.fruitNumber + 1,
                 u.default.Instance.SetScoreTween(a.default.score),
@@ -3508,7 +3510,18 @@ window.__require = function e(t, n, o) {
                 s.addComponent(cc.Sprite).spriteFrame = l.default.Instance.fruit[10], s.parent = c, s.position = cc.v2(0), d.default.Instance.Play(4, !1, 1), i.default.Instance.ribbonEffect(cc.v2(0, 0)), c.runAction(cc.sequence(cc.spawn(cc.jumpBy(1, 0, 0, 300, 1), cc.scaleTo(1, 1)), cc.delayTime(1), cc.spawn(cc.moveTo(1, cc.v2(0, 500)), cc.scaleTo(1, 0)), cc.callFunc(function () {
                   a.default.score += 100, u.default.Instance.SetScoreTween(a.default.score), e.active = !1, a.default.playerTouch = !0, c.destroy()
                 }))), n.node.active = !1, t.node.active = !1, n.node.destroy(), t.node.destroy()
-              }).start()))
+              }).start())) && (setTimeout(function() {
+                // window.location.href='./result.html'
+                // alert(121)
+                document.getElementById("box").style.display = "block";
+
+              }, 4000))
+              //  :
+              // (setTimeout(function() {
+              //   window.location.href='./result.html'
+
+              // }, 4000))
+
           }
         }, t.prototype.createBoom = function () {
           var e = r.default.Spawn("boom", cc.find("Canvas/upEffectParent"));
